@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zantúa Aesthetic Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #FDFBF9;
+        color: #3f3c3a; /* text-stone-800 */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FDFBF9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d1c4b8;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #bdae9f;
+      }
+
+      /* Hero Animation Styles */
+      .hero-content > * {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+      .hero-content .logo { animation-delay: 0.2s; }
+      .hero-content .eyebrow { animation-delay: 0.4s; }
+      .hero-content .title { animation-delay: 0.6s; }
+      .hero-content .subtitle { animation-delay: 0.8s; }
+      .hero-content .brand-phrase { animation-delay: 1.0s; }
+      .hero-content .cta-group { animation-delay: 1.2s; }
+
+      @keyframes fadeInUp {
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#FDFBF9] text-stone-800 antialiased">
+
+    <main>
+        <!-- Hero Section Premium -->
+        <section class="relative min-h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
+            style="background-image: url('https://i.postimg.cc/VsXNLvdJ/imagen-fondo.jpg')">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+            <div class="hero-content relative z-10 px-6 py-16 flex flex-col items-center max-w-5xl mx-auto">
+                <img 
+                    src="https://i.postimg.cc/SK478QQk/logo-zantua.jpg" 
+                    alt="Zantúa Logo"
+                    class="logo w-36 h-36 md:w-40 md:h-40 mb-6 rounded-full shadow-2xl ring-2 ring-white/10"
+                />
+                <span class="eyebrow uppercase tracking-[0.3em] text-sm text-white/70 mb-4">
+                    Aesthetic Wellness
+                </span>
+                <h1 class="title text-6xl md:text-8xl font-serif leading-tight tracking-tight">
+                    Zantúa
+                </h1>
+                <p class="subtitle mt-6 text-lg md:text-xl text-white/90 font-light max-w-3xl leading-relaxed">
+                   Depilación láser avanzada <span class="mx-2 text-white/70">|</span> 
+Cuidado avanzado de la piel <span class="mx-2 text-white/70">|</span> 
+Blanqueamiento íntimo
+
+                </p>
+                <p class="brand-phrase mt-10 text-xl md:text-2xl italic text-white/80">
+                    La ciencia del bienestar, el arte de la estética.
+                </p>
+                <div class="cta-group mt-12 flex flex-col sm:flex-row gap-4">
+                    <a 
+                        href="https://book.heygoldie.com/Zantua-Aesthetic-Wellness"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="px-10 py-4 bg-[#c09d84] text-white font-semibold text-lg rounded-full shadow-xl
+                        hover:bg-[#b18e75] hover:shadow-2xl hover:scale-[1.03]
+                        transition-all duration-300 ease-out"
+                    >
+                        Agenda tu evaluación personalizada
+                    </a>
+                    <a 
+                        href="#services"
+                        class="px-10 py-4 border border-white/40 text-white/90 font-medium text-lg rounded-full
+                        hover:bg-white/10 hover:border-white/70
+                        transition-all duration-300 ease-out"
+                    >
+                        Ver tratamientos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Session Section -->
+        <section class="py-16 sm:py-24">
+            <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">Descubra la Experiencia Zantúa</h2>
+                    <p class="mt-6 text-stone-700 leading-relaxed">Le invitamos a una sesión de prueba y evaluación sin costo. Un primer paso diseñado para brindarle confianza, confort y una demostración de nuestros resultados.</p>
+                    <p class="mt-4 text-stone-700 leading-relaxed">En Zantúa, cada tratamiento es una experiencia de bienestar integral.</p>
+                    <a href="https://wa.me/+18093106883?text=Hola,%20me%20gustaría%20agendar%20mi%20sesión%20de%20evaluación%20gratuita." target="_blank" rel="noopener noreferrer" class="mt-8 inline-block px-8 py-3 bg-stone-800 text-white font-semibold rounded-full shadow-md hover:bg-stone-700 transition-colors duration-300">
+                        Agendar Sesión Gratuita
+                    </a>
+                </div>
+                <div class="flex justify-center order-first md:order-last">
+                    <img src="https://i.postimg.cc/gJXVbxNM/ssf.jpg" alt="Bienestar y estética" class="rounded-lg shadow-2xl w-full max-w-sm h-auto object-cover"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Zantua Section -->
+        <section id="why-zantua" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">¿Por Qué Elegir Zantúa?</h2>
+                    <p class="mt-4 text-stone-600 max-w-3xl mx-auto">Combinamos ciencia, arte y dedicación para ofrecer una experiencia de bienestar que trasciende la estética convencional.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="text-center p-6 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-4 text-[#c09d84]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a13.5 13.5 0 01-3.75 0m-1.483-5.242a5.963 5.963 0 00-1.023-.243M3.75 10.5h16.5M3.75 6.75h16.5" /></svg>
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Tecnología de Vanguardia</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">Utilizamos equipos de última generación, garantizando tratamientos seguros, eficaces y mínimamente invasivos para resultados superiores.</p>
+                    </div>
+                    <div class="text-center p-6 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-4 text-[#c09d84]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c1.354 0 2.665-.276 3.868-.813M12 21c-1.354 0-2.665-.276-3.868-.813M15.75 9.375c0-1.036-.84-1.875-1.875-1.875S12 8.34 12 9.375s.84 1.875 1.875 1.875 1.875-.84 1.875-1.875zM8.25 9.375c0-1.036-.84-1.875-1.875-1.875S4.5 8.34 4.5 9.375s.84 1.875 1.875 1.875S8.25 10.41 8.25 9.375z" /></svg>
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Atención Personalizada</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">Cada plan de tratamiento se diseña a la medida de sus necesidades y objetivos, asegurando una experiencia única y personal.</p>
+                    </div>
+                    <div class="text-center p-6 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-4 text-[#c09d84]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Resultados Comprobados</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">Nuestro compromiso es con su satisfacción. Nos enfocamos en ofrecer resultados visibles y duraderos que realcen su belleza natural.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 sm:py-24 bg-[#FDFBF9]">
+             <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">Nuestros Servicios</h2>
+                    <p class="mt-4 text-stone-600 max-w-2xl mx-auto">Experiencias diseñadas para realzar su belleza natural y potenciar su bienestar.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-shadow duration-300 hover:shadow-2xl flex flex-col items-center justify-center">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Depilación Láser Avanzada</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">Tecnología de vanguardia para una piel suave y libre de vello, de forma segura y duradera.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-shadow duration-300 hover:shadow-2xl flex flex-col items-center justify-center">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Cuidado de la Piel</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">Tratamientos faciales personalizados que revitalizan, nutren y rejuvenecen su piel.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-shadow duration-300 hover:shadow-2xl flex flex-col items-center justify-center">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Blanqueamiento Íntimo</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">Procedimientos discretos y efectivos para unificar el tono de la piel en zonas delicadas.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-shadow duration-300 hover:shadow-2xl flex flex-col items-center justify-center">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Eliminación de Tatuajes</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">Elimine tatuajes no deseados con la última tecnología láser, minimizando el impacto en su piel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Myths and Truths Section -->
+        <section id="myths" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">Despejamos sus Dudas</h2>
+                    <p class="mt-4 text-stone-600 max-w-2xl mx-auto">Mitos y verdades sobre la depilación láser que necesita conocer para tomar la mejor decisión.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://i.postimg.cc/yN8jxPj6/MITOS-VERDADES-ZANTUA-01.jpg" alt="Mito y verdad sobre depilación láser 1" class="w-full h-auto object-cover"/>
+                    </div>
+                    <div class="rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://i.postimg.cc/43xPy5P3/MITOS-VERDADES-ZANTUA-02.jpg" alt="Mito y verdad sobre depilación láser 2" class="w-full h-auto object-cover"/>
+                    </div>
+                    <div class="rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://i.postimg.cc/k5gsGcsg/MITOS-VERDADES-ZANTUA-03.jpg" alt="Mito y verdad sobre depilación láser 3" class="w-full h-auto object-cover"/>
+                    </div>
+                    <div class="rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://i.postimg.cc/1z3BXHBt/MITOS-VERDADES-ZANTUA-04.jpg" alt="Mito y verdad sobre depilación láser 4" class="w-full h-auto object-cover"/>
+                    </div>
+                    <div class="rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://i.postimg.cc/QMdmCbmC/MITOS-VERDADES-ZANTUA-05.jpg" alt="Mito y verdad sobre depilación láser 5" class="w-full h-auto object-cover"/>
+                    </div>
+                    <div class="rounded-lg shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://i.postimg.cc/VNkgvRgr/MITOS-VERDADES-ZANTUA-06.jpg" alt="Mito y verdad sobre depilación láser 6" class="w-full h-auto object-cover"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 sm:py-24 bg-[#FDFBF9]">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">Planes y Precios</h2>
+                    <p class="mt-4 text-stone-600 max-w-3xl mx-auto">Elija el plan perfecto para usted. Todos nuestros paquetes incluyen 8 sesiones para garantizar resultados óptimos y duraderos.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group flex flex-col">
+                        <div class="relative">
+                            <img src="https://i.postimg.cc/gkyHK5Bq/Axilas.jpg" alt="Axilas" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-6"><h3 class="text-2xl font-bold text-white tracking-tight">Axilas</h3></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-3xl font-bold text-stone-800 mb-2">RD$6,500</p>
+                            <p class="text-sm text-stone-500 mb-6">Paquete de 8 sesiones</p>
+                            <a href="https://book.heygoldie.com/Zantua-Aesthetic-Wellness" target="_blank" rel="noopener noreferrer" class="mt-auto block w-full text-center py-3 px-6 bg-[#c09d84] text-white font-semibold rounded-full hover:bg-[#b18e75] transition-colors duration-300">Reservar cita ahora</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group flex flex-col">
+                        <div class="relative">
+                            <img src="https://i.postimg.cc/150rKTY0/Axilas-y-Brasilen-o.jpg" alt="Axilas y Brasileño" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-6"><h3 class="text-2xl font-bold text-white tracking-tight">Axilas y Brasileño</h3></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-3xl font-bold text-stone-800 mb-2">RD$9,000</p>
+                            <p class="text-sm text-stone-500 mb-6">Paquete de 8 sesiones</p>
+                            <a href="https://book.heygoldie.com/Zantua-Aesthetic-Wellness" target="_blank" rel="noopener noreferrer" class="mt-auto block w-full text-center py-3 px-6 bg-[#c09d84] text-white font-semibold rounded-full hover:bg-[#b18e75] transition-colors duration-300">Reservar cita ahora</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group flex flex-col">
+                        <div class="relative">
+                            <img src="https://i.postimg.cc/J435QgdQ/Brasilen-o.jpg" alt="Brasileño" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-6"><h3 class="text-2xl font-bold text-white tracking-tight">Brasileño</h3></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-3xl font-bold text-stone-800 mb-2">RD$7,000</p>
+                            <p class="text-sm text-stone-500 mb-6">Paquete de 8 sesiones</p>
+                            <a href="https://book.heygoldie.com/Zantua-Aesthetic-Wellness" target="_blank" rel="noopener noreferrer" class="mt-auto block w-full text-center py-3 px-6 bg-[#c09d84] text-white font-semibold rounded-full hover:bg-[#b18e75] transition-colors duration-300">Reservar cita ahora</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group flex flex-col">
+                        <div class="relative">
+                            <img src="https://i.postimg.cc/jSsQ3XGw/Cuerpo-Completo.jpg" alt="Cuerpo Completo" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-6"><h3 class="text-2xl font-bold text-white tracking-tight">Cuerpo Completo</h3></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-3xl font-bold text-stone-800 mb-2">RD$13,500</p>
+                            <p class="text-sm text-stone-500 mb-6">Paquete de 8 sesiones</p>
+                            <a href="https://book.heygoldie.com/Zantua-Aesthetic-Wellness" target="_blank" rel="noopener noreferrer" class="mt-auto block w-full text-center py-3 px-6 bg-[#c09d84] text-white font-semibold rounded-full hover:bg-[#b18e75] transition-colors duration-300">Reservar cita ahora</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group flex flex-col">
+                        <div class="relative">
+                            <img src="https://i.postimg.cc/P5tzV4BW/Piernas-Completas.jpg" alt="Piernas Completas" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-6"><h3 class="text-2xl font-bold text-white tracking-tight">Piernas Completas</h3></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-3xl font-bold text-stone-800 mb-2">RD$9,000</p>
+                            <p class="text-sm text-stone-500 mb-6">Paquete de 8 sesiones</p>
+                            <a href="https://book.heygoldie.com/Zantua-Aesthetic-Wellness" target="_blank" rel="noopener noreferrer" class="mt-auto block w-full text-center py-3 px-6 bg-[#c09d84] text-white font-semibold rounded-full hover:bg-[#b18e75] transition-colors duration-300">Reservar cita ahora</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden group flex flex-col">
+                        <div class="relative">
+                            <img src="https://i.postimg.cc/bwzHVTKH/Rostro.jpg" alt="Rostro" class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-6"><h3 class="text-2xl font-bold text-white tracking-tight">Rostro</h3></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-3xl font-bold text-stone-800 mb-2">RD$6,500</p>
+                            <p class="text-sm text-stone-500 mb-6">Paquete de 8 sesiones</p>
+                            <a href="https://book.heygoldie.com/Zantua-Aesthetic-Wellness" target="_blank" rel="noopener noreferrer" class="mt-auto block w-full text-center py-3 px-6 bg-[#c09d84] text-white font-semibold rounded-full hover:bg-[#b18e75] transition-colors duration-300">Reservar cita ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="agenda" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">
+                    Agenda tu cita en Zantúa Aesthetic Wellness
+                </h2>
+                <p class="mt-6 text-stone-700 max-w-2xl mx-auto leading-relaxed">
+                    Nuestro sistema de reservas le solicitará iniciar sesión o crear una cuenta. Esto nos permite confirmar su cita de manera segura y enviarle recordatorios automáticos para su comodidad.
+                </p>
+                <a 
+                    href="https://book.heygoldie.com/Zantua-Aesthetic-Wellness"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="mt-8 inline-block px-10 py-4 bg-[#c09d84] text-white font-bold text-lg rounded-full shadow-lg hover:bg-[#b18e75] transition-transform transform hover:scale-105 duration-300 ease-in-out"
+                >
+                    Reservar cita ahora
+                </a>
+                <p class="mt-4 text-sm text-stone-500">
+                    Proceso rápido, seguro y con confirmación automática.
+                </p>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="py-16 sm:py-24 bg-[#FDFBF9]">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <div class="flex justify-center items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#c09d84]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">Nuestra Ubicación</h2>
+                </div>
+                <p class="mt-6 text-lg text-stone-700">C. Florence Terry Griswuld 16, Santo Domingo, Dominican Republic 10119</p>
+                <div class="mt-10 h-96 w-full rounded-lg shadow-2xl overflow-hidden border-4 border-white">
+                    <iframe src="https://maps.google.com/maps?q=C.%20Florence%20Terry%20Griswuld%2016,%20Santo%20Domingo,%20Dominican%20Republic&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación de Zantúa Aesthetic Wellness"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-100 py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center text-stone-600">
+            <img src="https://i.postimg.cc/SK478QQk/logo-zantua.jpg" alt="Zantúa Logo" class="w-24 h-24 mx-auto mb-4 rounded-full"/>
+            <p class="font-semibold text-lg">Zantúa Aesthetic Wellness</p>
+            <p class="mt-2 text-sm italic">– La sinergia perfecta entre ciencia y belleza. –</p>
+            <p class="mt-6 text-xs text-stone-500">
+                © <span id="year"></span> Zantúa Aesthetic Wellness. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/+18093106883" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300 z-50" aria-label="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.315 1.731 6.086l.001.004 4.971 4.971zM18.19 13.915c-.227-.114-1.341-.663-1.551-.739-.209-.076-.36-.114-.51.114-.15.227-.586.739-.719.886-.133.148-.265.166-.492.052-.227-.114-.948-.349-1.804-1.113-.664-.58-1.108-1.288-1.235-1.515-.128-.227-.013-.349.101-.463.099-.101.227-.265.34-.398.114-.133.148-.227.228-.38.079-.15.04-.287-.013-.398-.053-.114-.51-1.235-.7-1.693-.18-.442-.36-.376-.51-.383-.14-.008-.3-.01-.46-.01s-.41.066-.61.308c-.209.24-.801.785-.801 1.901s.82 2.201.93 2.348c.112.148 1.605 2.455 3.89 3.449.56.24 1.001.381 1.34.481.411.119.782.102 1.07.065.318-.039.948-.388 1.08-.763.132-.375.132-.698.093-.763-.04-.065-.15-.102-.33-.213z"/></svg>
+    </a>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('year').textContent = new Date().getFullYear();
+      });
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
